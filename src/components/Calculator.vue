@@ -166,7 +166,7 @@ export default {
       const { data } = await axios.get(`${this.cloudUrl}/load/${this.name}`);
       console.log("data", data);
       if (!this.verifyData(data)) {
-        alert("invalid file");
+        alert("Not found your data on cloud");
         return;
       }
       this.a = Number.parseFloat(data.a);
